@@ -1,0 +1,38 @@
+name: update-dataset
+
+on:
+  schedule:
+    # Run daily at 05:12 UTC (safe after midnight America/Toronto)
+    - cron: "12 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # allow committing artifacts back to repo
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch artifacts
+        run: python src/fetch_wordle_data.py
+
+      - name: Commit changes (if any)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): refresh wordle artifacts [skip ci]"
+          branch: ${{ github.ref_name }}
+          file_pattern: |
+            data/*.json
+            data/*.csv
+            public/*.json
