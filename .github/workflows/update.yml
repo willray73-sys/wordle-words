@@ -27,6 +27,13 @@ jobs:
       - name: Fetch artifacts
         run: python src/fetch_wordle_data.py
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build dated history from NYT
+        run: node scripts/fetch_wordle_history.mjs
+
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
