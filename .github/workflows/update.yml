@@ -32,8 +32,26 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Build dated history from NYT
-        run: node scripts/fetch_wordle_history.mjs
+      # --- RETRYING BUILD STEP (replaces the old single-run step) ---
+      - name: Build dated history from NYT (with retries)
+        run: |
+          set -e
+          tries=0
+          until [ $tries -ge 6 ]
+          do
+            node scripts/fetch_wordle_history.mjs && exit 0
+            code=$?
+            if [ "$code" -ne 2 ]; then
+              echo "Non-retryable error (exit $code)."
+              exit $code
+            fi
+            tries=$((tries+1))
+            echo "NYT not live yet (exit 2). Retry $tries/6 after 15m..."
+            sleep 900
+          done
+          echo "Gave up after 6 retries."
+          exit 2
+      # --- END RETRYING BUILD STEP ---
 
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
