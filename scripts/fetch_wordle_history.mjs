@@ -37,13 +37,12 @@ async function fetchDay(iso) {
 }
 
 async function main() {
-  const end = yesterdayET(); // we must include up to 'end' if available
+  const end = yesterdayET(); // include up to 'yesterday' ET
   const endISO = isoET(end);
 
   const byDate = [];
   const byWord = new Map();
 
-  // Build full history up to 'end'
   for (let d = new Date(start); d <= end; d.setDate(d.getDate()+1)) {
     const iso = isoET(d);
     const rec = await fetchDay(iso);
@@ -53,17 +52,14 @@ async function main() {
     }
   }
 
-  // Sort
   byDate.sort((a,b) => (a.date < b.date ? -1 : 1));
 
-  // Write artifacts
   await fs.mkdir("public", { recursive: true });
   await fs.writeFile("public/used_dated.json", JSON.stringify({ results: byDate }, null, 2));
   await fs.writeFile("public/used_first_seen.json", JSON.stringify(Object.fromEntries(byWord), null, 2));
 
   const last = byDate.at(-1)?.date;
   if (last !== endISO) {
-    // NYT likely hadn't published the latest yet; fail CI so it's visible.
     console.error(`Expected last date ${endISO} but got ${last ?? "none"}. NYT data may not be live yet.`);
     process.exit(2);
   }
