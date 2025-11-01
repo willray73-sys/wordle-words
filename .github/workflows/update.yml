@@ -1,9 +1,13 @@
 name: update-dataset
-
 on:
   schedule:
-    # Run daily at 05:12 UTC (safe after midnight America/Toronto)
-    - cron: "12 5 * * *"
+    # All times are UTC (GitHub Actions runs on UTC cron)
+    # ~01:30 ET  => 05:30 UTC
+    - cron: "30 5 * * *"
+    # ~08:30 ET  => 12:30 UTC
+    - cron: "30 12 * * *"
+    # ~13:30 ET  => 17:30 UTC
+    - cron: "30 17 * * *"
   workflow_dispatch:
 
 jobs:
