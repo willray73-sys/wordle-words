@@ -1,103 +1,74 @@
-// Builds public/used_dated.json and public/used_first_seen.json from NYT Wordle v2.
-// SPOILER-SAFE: only up to YESTERDAY in America/New_York.
-// Adds diagnostics + short retry loop for "yesterday" to handle late NYT/CDN availability.
+// Incremental, spoiler-safe Wordle history builder (up to YESTERDAY ET).
+// - Reads existing public/used_dated.json and only fetches missing dates
+// - Busts CDN on the last few days
+// - Never exits non-zero solely because "yesterday" isn't live yet
 
 import fs from "node:fs/promises";
 
+const pad = n => String(n).padStart(2,"0");
+const iso = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const nowET = () => new Date(new Date().toLocaleString("en-US",{ timeZone:"America/New_York" }));
+const yET = () => { const t=nowET(), y=new Date(t); y.setDate(y.getDate()-1); y.setHours(0,0,0,0); return y; };
 const start = new Date("2021-06-19T00:00:00-04:00"); // Wordle #0 (ET)
 
-const pad = n => String(n).padStart(2, "0");
-const isoET = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
-
-function nowET() {
-  return new Date(new Date().toLocaleString("en-US", { timeZone: "America/New_York" }));
-}
-function yesterdayET() {
-  const n = nowET();
-  const y = new Date(n);
-  y.setDate(y.getDate() - 1);
-  y.setHours(0,0,0,0);
-  return y;
-}
-
-async function fetchDay(iso, opts = { headOnly: false }) {
-  const url = `https://www.nytimes.com/svc/wordle/v2/${iso}.json`;
-  try {
-    const res = await fetch(url, { method: opts.headOnly ? "HEAD" : "GET", headers: { accept: "application/json" } });
-    if (!res.ok) return { ok: false, status: res.status };
-    if (opts.headOnly) return { ok: true, status: res.status };
-    const j = await res.json();
+async function fetchDay(isoStr, bust=false){
+  const url = `https://www.nytimes.com/svc/wordle/v2/${isoStr}.json${bust ? `?nocache=${Date.now()}` : ""}`;
+  try{
+    const r = await fetch(url,{ headers:{ accept:"application/json", "cache-control":"no-cache" }});
+    if(!r.ok) return null;
+    const j = await r.json();
     const word = (j.solution || j.answer || j.word || "").toLowerCase();
     const number = j.day ?? j.id ?? j.puzzle ?? j.game ?? j.index ?? null;
-    if (!/^[a-z]{5}$/.test(word)) return { ok: false, status: 200, reason: "bad-word" };
-    return { ok: true, status: 200, rec: { date: iso, number, word } };
-  } catch (e) {
-    return { ok: false, status: 0, reason: e?.message || "fetch-error" };
-  }
+    if(!/^[a-z]{5}$/.test(word)) return null;
+    return { date: isoStr, number, word };
+  }catch{ return null; }
 }
 
-async function main() {
-  const end = yesterdayET();
-  const endISO = isoET(end);
+async function main(){
+  const end = yET();               // stop at *yesterday* (spoiler-safe)
+  const endISO = iso(end);
 
-  const byDate = [];
-  const byWord = new Map();
+  // Load existing data if present
+  let existing = { results: [] };
+  try{ existing = JSON.parse(await fs.readFile("public/used_dated.json","utf-8")); }catch{}
+  const map = new Map(existing.results?.map(r => [r.date, r]) ?? []);
 
-  // Build history up to end (yesterday)
-  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-    const iso = isoET(d);
-    const out = await fetchDay(iso);
-    if (out.ok && out.rec) {
-      byDate.push(out.rec);
-      if (!byWord.has(out.rec.word)) byWord.set(out.rec.word, { date: out.rec.date, number: out.rec.number });
-    } else if (iso === endISO) {
-      // If yesterday wasn't immediately available, do a targeted short retry.
-      console.error(`[warn] yesterday ${endISO} not ready: status=${out.status}${out.reason ? ` reason=${out.reason}` : ""}`);
-      let ok = false, last = out;
-      for (let i = 1; i <= 10; i++) {
-        await new Promise(r => setTimeout(r, 5000)); // 5s
-        const retry = await fetchDay(endISO);
-        if (retry.ok && retry.rec) {
-          byDate.push(retry.rec);
-          if (!byWord.has(retry.rec.word)) byWord.set(retry.rec.word, { date: retry.rec.date, number: retry.rec.number });
-          ok = true;
-          console.log(`[info] yesterday ${endISO} succeeded on retry ${i}`);
-          break;
-        }
-        last = retry;
-        console.error(`[warn] retry ${i} for ${endISO}: status=${retry.status}${retry.reason ? ` reason=${retry.reason}` : ""}`);
-      }
-      if (!ok) {
-        console.error(`[error] yesterday ${endISO} still missing after retries. Last status=${last.status}${last.reason?` reason=${last.reason}`:""}`);
-      }
-    }
+  // Determine where to start: day after the latest existing date, else full rebuild
+  let startDate = start;
+  if (map.size > 0) {
+    const last = [...map.keys()].sort().at(-1);
+    const d = last ? new Date(`${last}T00:00:00-05:00`) : start; // parse in ET-ish
+    startDate = new Date(d);
+    startDate.setDate(startDate.getDate() + 1);
   }
 
-  // DIAGNOSTICS: show HEAD status for yesterday and the day before
-  {
-    const dayBefore = new Date(end); dayBefore.setDate(dayBefore.getDate() - 1);
-    const prevISO = isoET(dayBefore);
-    const h1 = await fetchDay(prevISO, { headOnly: true });
-    const h2 = await fetchDay(endISO, { headOnly: true });
-    console.log(`[diag] HEAD ${prevISO}: status=${h1.status} | HEAD ${endISO}: status=${h2.status}`);
+  // Fetch missing dates up to end
+  const tailBustSet = new Set(); // dates we will bust cache for
+  // Bust yesterday and day-before to fight CDN staleness
+  tailBustSet.add(endISO);
+  const dayBefore = new Date(end); dayBefore.setDate(dayBefore.getDate()-1);
+  tailBustSet.add(iso(dayBefore));
+
+  for (let d = new Date(startDate); d <= end; d.setDate(d.getDate()+1)) {
+    const s = iso(d);
+    const bust = tailBustSet.has(s);
+    const rec = await fetchDay(s, bust);
+    if (rec) map.set(s, rec);
+    else     console.error(`[warn] missing ${s} (bust=${bust})`);
   }
 
-  // Sort & write
-  byDate.sort((a,b) => (a.date < b.date ? -1 : 1));
-  await fs.mkdir("public", { recursive: true });
-  await fs.writeFile("public/used_dated.json", JSON.stringify({ results: byDate }, null, 2));
-  await fs.writeFile("public/used_first_seen.json", JSON.stringify(Object.fromEntries(byWord), null, 2));
+  const merged = [...map.values()].sort((a,b)=> a.date < b.date ? -1 : 1);
+  await fs.mkdir("public",{recursive:true});
+  await fs.writeFile("public/used_dated.json", JSON.stringify({ results: merged }, null, 2));
 
-  const last = byDate.at(-1)?.date;
-  if (last !== endISO) {
-    console.error(`Expected last date ${endISO} but got ${last ?? "none"}. NYT data may not be live yet or transiently failing.`);
-    process.exit(2); // signal "retry later" to CI
-  }
+  // Also (re)build first_seen map
+  const firstSeen = {};
+  for (const r of merged) if (!firstSeen[r.word]) firstSeen[r.word] = { date: r.date, number: r.number };
+  await fs.writeFile("public/used_first_seen.json", JSON.stringify(firstSeen, null, 2));
 
-  console.log(`OK up to ${last}. Entries: ${byDate.length}, unique words: ${byWord.size}`);
+  const tail = merged.at(-1)?.date;
+  console.log(`Tail now: ${tail} (target yesterday ET: ${endISO}) | entries: ${merged.length}`);
+  // NOTE: We do not exit non-zero if tail<endISO to avoid "stuck" runs.
 }
 
-await main().catch(e => {
-  console.error(e?.stack || e);
-  process.exit(1);
-});
+await main().catch(e => { console.error(e?.stack || e); process.exit(1); });
