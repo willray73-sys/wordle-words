@@ -60,7 +60,7 @@ jobs:
           exit 2
       # --- END RETRYING BUILD STEP ---
 
-      - name: Self-heal: backfill last 3 days
+      - name: Self-heal backfill last 3 days
         run: node scripts/backfill_recent.mjs
 
       # --- DIAGNOSTICS: show what we're about to commit ---
