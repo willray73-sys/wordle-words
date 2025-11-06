@@ -1,4 +1,5 @@
 name: update-dataset
+
 on:
   schedule:
     # All times are UTC (GitHub Actions runs on UTC cron)
@@ -57,6 +58,17 @@ jobs:
           exit 2
       # --- END RETRYING BUILD STEP ---
 
+      # --- DIAGNOSTICS: show what we're about to commit ---
+      - name: Show tail after build (diagnostic)
+        run: |
+          node -e 'const j=require("./public/used_dated.json"); console.log("TAIL_AFTER_BUILD:", j.results.at(-1), "COUNT:", j.results.length)'
+
+      - name: List changed files (pre-commit)
+        run: |
+          git status --porcelain
+          git diff --name-only
+      # --- END DIAGNOSTICS ---
+
       - name: Commit changes (if any)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -66,3 +78,8 @@ jobs:
             data/*.json
             data/*.csv
             public/*.json
+
+      # --- DIAGNOSTICS: prove the commit landed on this branch ---
+      - name: Show last commit touching used_dated.json (post-commit)
+        run: |
+          git log -n 1 -- public/used_dated.json
