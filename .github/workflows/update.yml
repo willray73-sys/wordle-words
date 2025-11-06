@@ -9,6 +9,8 @@ on:
     - cron: "30 12 * * *"
     # ~13:30 ET  => 17:30 UTC
     - cron: "30 17 * * *"
+    # ~19:30 ET  => 21:30 UTC
+    - cron: "30 21 * * *"
   workflow_dispatch:
 
 jobs:
@@ -57,6 +59,9 @@ jobs:
           echo "Gave up after 6 retries."
           exit 2
       # --- END RETRYING BUILD STEP ---
+
+      - name: Self-heal: backfill last 3 days
+        run: node scripts/backfill_recent.mjs
 
       # --- DIAGNOSTICS: show what we're about to commit ---
       - name: Show tail after build (diagnostic)
