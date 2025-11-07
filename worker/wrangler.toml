@@ -1,0 +1,8 @@
+name = "wordle-words-api"
+main = "src/index.ts"
+compatibility_date = "2024-10-01"
+workers_dev = true
+
+[vars]
+# use jsDelivr to dodge raw.githubusercontent "branch head" cache lag
+RAW_BASE = "https://cdn.jsdelivr.net/gh/willray73-sys/wordle-words@main"
