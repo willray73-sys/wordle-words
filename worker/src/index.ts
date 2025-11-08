@@ -1,6 +1,6 @@
-// const RAW_BASE = "https://raw.githubusercontent.com/willray73-sys/wordle-words/main";
-// New (faster, avoids branch caching):
-const RAW_BASE = "https://cdn.jsdelivr.net/gh/willray73-sys/wordle-words@main";
+const RAW_BASE = "https://raw.githubusercontent.com/willray73-sys/wordle-words/main";
+
+// const RAW_BASE = "https://cdn.jsdelivr.net/gh/willray73-sys/wordle-words@main";
 
 // Keep in-memory caches short; we’ll rely on versioned fetch keys instead
 const MEMO_TTL_MS = 60 * 1000; // 1 minute
