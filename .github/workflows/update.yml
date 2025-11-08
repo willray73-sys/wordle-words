@@ -91,13 +91,16 @@ jobs:
       - name: Show last commit touching used_dated.json (post-commit)
         run: git log -n 1 -- public/used_dated.json
 
-      # --- CDN PURGE + VERIFY (jsDelivr) ---
-      - name: Purge jsDelivr caches
+      # Purge jsDelivr (GET is required) and warm the cache
+      - name: Purge jsDelivr caches and warm
         run: |
           set -e
-          for f in public/used_dated.json public/used_first_seen.json public/used.json public/allowed.json public/allowed_not_used.json; do
+          FILES=("public/used_dated.json" "public/used_first_seen.json" "public/used.json" "public/allowed.json" "public/allowed_not_used.json")
+          for f in "${FILES[@]}"; do
             echo "Purging $f ..."
-            curl -sX POST "https://purge.jsdelivr.net/gh/willray73-sys/wordle-words@main/$f" || true
+            curl -s "https://purge.jsdelivr.net/gh/willray73-sys/wordle-words@main/$f" || true
+            # Warm immediately after purge
+            curl -s "https://cdn.jsdelivr.net/gh/willray73-sys/wordle-words@main/$f?warm=$(date +%s)" >/dev/null || true
           done
 
       - name: Verify jsDelivr tail
