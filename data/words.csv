@@ -378,7 +378,7 @@ alibi,false,2026-03-01
 alick,false,2026-03-01
 alien,true,2026-03-01
 alifs,false,2026-03-01
-align,true,2026-03-01
+align,false,2026-03-01
 alike,true,2026-03-01
 alims,false,2026-03-01
 aline,false,2026-03-01
@@ -1595,7 +1595,7 @@ bowls,false,2026-03-01
 bowne,false,2026-03-01
 bowrs,false,2026-03-01
 bowse,false,2026-03-01
-boxed,true,2026-03-01
+boxed,false,2026-03-01
 boxen,false,2026-03-01
 boxer,true,2026-03-01
 boxes,false,2026-03-01
@@ -2240,7 +2240,7 @@ chufa,false,2026-03-01
 chuff,false,2026-03-01
 chugs,false,2026-03-01
 chump,false,2026-03-01
-chums,true,2026-03-01
+chums,false,2026-03-01
 chunk,true,2026-03-01
 churl,false,2026-03-01
 churn,false,2026-03-01
@@ -2379,7 +2379,7 @@ cloze,false,2026-03-01
 clubs,false,2026-03-01
 cluck,true,2026-03-01
 clued,false,2026-03-01
-clues,true,2026-03-01
+clues,false,2026-03-01
 cluey,false,2026-03-01
 clump,false,2026-03-01
 clung,true,2026-03-01
@@ -2453,7 +2453,7 @@ colls,false,2026-03-01
 colly,false,2026-03-01
 colog,false,2026-03-01
 colon,true,2026-03-01
-color,true,2026-03-01
+color,false,2026-03-01
 colts,false,2026-03-01
 colza,false,2026-03-01
 comae,false,2026-03-01
@@ -4200,7 +4200,7 @@ fitte,false,2026-03-01
 fitts,false,2026-03-01
 fiver,false,2026-03-01
 fives,false,2026-03-01
-fixed,true,2026-03-01
+fixed,false,2026-03-01
 fixer,true,2026-03-01
 fixes,false,2026-03-01
 fixie,false,2026-03-01
@@ -4296,7 +4296,7 @@ flues,false,2026-03-01
 fluey,false,2026-03-01
 fluff,true,2026-03-01
 fluid,false,2026-03-01
-fluke,true,2026-03-01
+fluke,false,2026-03-01
 fluky,false,2026-03-01
 flume,true,2026-03-01
 flump,false,2026-03-01
@@ -5744,7 +5744,7 @@ huzza,false,2026-03-01
 huzzy,false,2026-03-01
 hwyls,false,2026-03-01
 hydel,false,2026-03-01
-hydra,true,2026-03-01
+hydra,false,2026-03-01
 hydro,false,2026-03-01
 hyena,true,2026-03-01
 hyens,false,2026-03-01
@@ -5895,7 +5895,7 @@ input,true,2026-03-01
 inros,false,2026-03-01
 inrun,false,2026-03-01
 insee,false,2026-03-01
-inset,true,2026-03-01
+inset,false,2026-03-01
 inspo,false,2026-03-01
 intel,false,2026-03-01
 inter,true,2026-03-01
@@ -8559,7 +8559,7 @@ nosir,false,2026-03-01
 notal,false,2026-03-01
 notam,false,2026-03-01
 notch,false,2026-03-01
-noted,true,2026-03-01
+noted,false,2026-03-01
 noter,false,2026-03-01
 notes,false,2026-03-01
 notum,false,2026-03-01
@@ -10603,7 +10603,7 @@ resaw,false,2026-03-01
 resay,false,2026-03-01
 resee,false,2026-03-01
 reses,false,2026-03-01
-reset,true,2026-03-01
+reset,false,2026-03-01
 resew,false,2026-03-01
 resid,false,2026-03-01
 resin,true,2026-03-01
@@ -11425,7 +11425,7 @@ serfs,false,2026-03-01
 serge,false,2026-03-01
 seria,false,2026-03-01
 seric,false,2026-03-01
-serif,true,2026-03-01
+serif,false,2026-03-01
 serin,false,2026-03-01
 serir,false,2026-03-01
 serks,false,2026-03-01
@@ -13116,7 +13116,7 @@ tilts,false,2026-03-01
 timbo,false,2026-03-01
 timed,false,2026-03-01
 timer,true,2026-03-01
-times,true,2026-03-01
+times,false,2026-03-01
 timid,false,2026-03-01
 timon,false,2026-03-01
 timps,false,2026-03-01
@@ -13232,7 +13232,7 @@ tonka,false,2026-03-01
 tonks,false,2026-03-01
 tonne,false,2026-03-01
 tonus,false,2026-03-01
-tools,true,2026-03-01
+tools,false,2026-03-01
 tooms,false,2026-03-01
 toons,false,2026-03-01
 tooth,true,2026-03-01
