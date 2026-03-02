@@ -132,7 +132,7 @@ adays,false,2026-03-02
 adbot,false,2026-03-02
 addas,false,2026-03-02
 addax,false,2026-03-02
-added,true,2026-03-02
+added,false,2026-03-02
 adder,false,2026-03-02
 addin,false,2026-03-02
 addio,false,2026-03-02
@@ -1006,7 +1006,7 @@ barye,false,2026-03-02
 basal,false,2026-03-02
 basan,false,2026-03-02
 basas,false,2026-03-02
-based,true,2026-03-02
+based,false,2026-03-02
 basen,false,2026-03-02
 baser,false,2026-03-02
 bases,false,2026-03-02
@@ -1115,7 +1115,7 @@ begin,true,2026-03-02
 begob,false,2026-03-02
 begot,false,2026-03-02
 begum,false,2026-03-02
-begun,true,2026-03-02
+begun,false,2026-03-02
 beige,false,2026-03-02
 beigy,false,2026-03-02
 being,true,2026-03-02
@@ -1598,7 +1598,7 @@ bowse,false,2026-03-02
 boxed,false,2026-03-02
 boxen,false,2026-03-02
 boxer,true,2026-03-02
-boxes,true,2026-03-02
+boxes,false,2026-03-02
 boxla,false,2026-03-02
 boxty,false,2026-03-02
 boyar,false,2026-03-02
@@ -2188,7 +2188,7 @@ ching,false,2026-03-02
 chink,false,2026-03-02
 chino,false,2026-03-02
 chins,false,2026-03-02
-chips,true,2026-03-02
+chips,false,2026-03-02
 chirk,false,2026-03-02
 chirl,false,2026-03-02
 chirm,false,2026-03-02
@@ -2946,7 +2946,7 @@ dazes,false,2026-03-02
 dbags,false,2026-03-02
 deads,false,2026-03-02
 deair,false,2026-03-02
-deals,true,2026-03-02
+deals,false,2026-03-02
 dealt,false,2026-03-02
 deans,false,2026-03-02
 deare,false,2026-03-02
@@ -4296,7 +4296,7 @@ flues,false,2026-03-02
 fluey,false,2026-03-02
 fluff,true,2026-03-02
 fluid,false,2026-03-02
-fluke,false,2026-03-02
+fluke,true,2026-03-02
 fluky,false,2026-03-02
 flume,true,2026-03-02
 flump,false,2026-03-02
@@ -5607,7 +5607,7 @@ hongi,false,2026-03-02
 hongs,false,2026-03-02
 honks,false,2026-03-02
 honky,false,2026-03-02
-honor,true,2026-03-02
+honor,false,2026-03-02
 hooch,false,2026-03-02
 hoods,false,2026-03-02
 hoody,false,2026-03-02
@@ -5897,7 +5897,7 @@ inrun,false,2026-03-02
 insee,false,2026-03-02
 inset,false,2026-03-02
 inspo,false,2026-03-02
-intel,true,2026-03-02
+intel,false,2026-03-02
 inter,true,2026-03-02
 intil,false,2026-03-02
 intis,false,2026-03-02
@@ -6903,7 +6903,7 @@ ligne,false,2026-03-02
 liked,false,2026-03-02
 liken,false,2026-03-02
 liker,false,2026-03-02
-likes,true,2026-03-02
+likes,false,2026-03-02
 likin,false,2026-03-02
 lilac,true,2026-03-02
 lills,false,2026-03-02
@@ -6942,7 +6942,7 @@ lingo,true,2026-03-02
 lings,false,2026-03-02
 lingy,false,2026-03-02
 linin,false,2026-03-02
-links,true,2026-03-02
+links,false,2026-03-02
 linky,false,2026-03-02
 linns,false,2026-03-02
 linny,false,2026-03-02
@@ -7026,7 +7026,7 @@ loggy,false,2026-03-02
 logia,false,2026-03-02
 logic,true,2026-03-02
 logie,false,2026-03-02
-login,true,2026-03-02
+login,false,2026-03-02
 logoi,false,2026-03-02
 logon,false,2026-03-02
 logos,false,2026-03-02
@@ -7066,7 +7066,7 @@ loony,false,2026-03-02
 loops,false,2026-03-02
 loopy,true,2026-03-02
 loord,false,2026-03-02
-loose,true,2026-03-02
+loose,false,2026-03-02
 loots,false,2026-03-02
 loped,false,2026-03-02
 loper,false,2026-03-02
@@ -7580,7 +7580,7 @@ mensh,false,2026-03-02
 menta,false,2026-03-02
 mento,false,2026-03-02
 ments,false,2026-03-02
-menus,true,2026-03-02
+menus,false,2026-03-02
 meous,false,2026-03-02
 meows,false,2026-03-02
 merch,false,2026-03-02
@@ -9030,7 +9030,7 @@ paeon,false,2026-03-02
 pagan,false,2026-03-02
 paged,false,2026-03-02
 pager,false,2026-03-02
-pages,true,2026-03-02
+pages,false,2026-03-02
 pagle,false,2026-03-02
 pagne,false,2026-03-02
 pagod,false,2026-03-02
@@ -10718,7 +10718,7 @@ rinds,false,2026-03-02
 rindy,false,2026-03-02
 rines,false,2026-03-02
 ringe,false,2026-03-02
-rings,true,2026-03-02
+rings,false,2026-03-02
 ringy,false,2026-03-02
 rinks,false,2026-03-02
 rinse,false,2026-03-02
@@ -10806,7 +10806,7 @@ rokey,false,2026-03-02
 rokos,false,2026-03-02
 rolag,false,2026-03-02
 roleo,false,2026-03-02
-roles,true,2026-03-02
+roles,false,2026-03-02
 rolfs,false,2026-03-02
 rolls,false,2026-03-02
 rolly,false,2026-03-02
@@ -10933,7 +10933,7 @@ ruban,false,2026-03-02
 rubby,false,2026-03-02
 rubel,false,2026-03-02
 rubes,false,2026-03-02
-rubin,true,2026-03-02
+rubin,false,2026-03-02
 rubio,false,2026-03-02
 ruble,false,2026-03-02
 rubli,false,2026-03-02
@@ -11493,7 +11493,7 @@ shape,true,2026-03-02
 shaps,false,2026-03-02
 shard,true,2026-03-02
 share,true,2026-03-02
-shark,true,2026-03-02
+shark,false,2026-03-02
 sharn,false,2026-03-02
 sharp,true,2026-03-02
 shart,false,2026-03-02
@@ -12379,7 +12379,7 @@ stend,false,2026-03-02
 steno,false,2026-03-02
 stens,false,2026-03-02
 stent,false,2026-03-02
-steps,true,2026-03-02
+steps,false,2026-03-02
 stept,false,2026-03-02
 stere,false,2026-03-02
 stern,true,2026-03-02
@@ -12479,7 +12479,7 @@ stucs,false,2026-03-02
 stude,false,2026-03-02
 studs,false,2026-03-02
 study,true,2026-03-02
-stuff,true,2026-03-02
+stuff,false,2026-03-02
 stull,false,2026-03-02
 stulm,false,2026-03-02
 stumm,false,2026-03-02
@@ -12742,7 +12742,7 @@ tajes,false,2026-03-02
 takas,false,2026-03-02
 taken,true,2026-03-02
 taker,false,2026-03-02
-takes,true,2026-03-02
+takes,false,2026-03-02
 takhi,false,2026-03-02
 takht,false,2026-03-02
 takin,false,2026-03-02
@@ -13562,7 +13562,7 @@ tyned,false,2026-03-02
 tynes,false,2026-03-02
 typal,false,2026-03-02
 typed,false,2026-03-02
-types,true,2026-03-02
+types,false,2026-03-02
 typey,false,2026-03-02
 typic,false,2026-03-02
 typos,false,2026-03-02
@@ -13986,7 +13986,7 @@ visas,false,2026-03-02
 vised,false,2026-03-02
 vises,false,2026-03-02
 visie,false,2026-03-02
-visit,true,2026-03-02
+visit,false,2026-03-02
 visna,false,2026-03-02
 visne,false,2026-03-02
 vison,false,2026-03-02
@@ -14144,7 +14144,7 @@ wanle,false,2026-03-02
 wanly,false,2026-03-02
 wanna,false,2026-03-02
 wanta,false,2026-03-02
-wants,true,2026-03-02
+wants,false,2026-03-02
 wanty,false,2026-03-02
 wanze,false,2026-03-02
 waqfs,false,2026-03-02
@@ -14447,7 +14447,7 @@ wootz,false,2026-03-02
 woozy,false,2026-03-02
 words,true,2026-03-02
 wordy,true,2026-03-02
-works,true,2026-03-02
+works,false,2026-03-02
 worky,false,2026-03-02
 world,true,2026-03-02
 worms,false,2026-03-02
@@ -14594,7 +14594,7 @@ yealm,false,2026-03-02
 yeans,false,2026-03-02
 yeard,false,2026-03-02
 yearn,true,2026-03-02
-years,true,2026-03-02
+years,false,2026-03-02
 yeast,true,2026-03-02
 yecch,false,2026-03-02
 yechs,false,2026-03-02
