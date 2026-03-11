@@ -2064,7 +2064,7 @@ celeb,false,2026-03-11
 cella,false,2026-03-11
 celli,false,2026-03-11
 cello,true,2026-03-11
-cells,true,2026-03-11
+cells,false,2026-03-11
 celly,false,2026-03-11
 celom,false,2026-03-11
 celts,false,2026-03-11
@@ -2293,7 +2293,7 @@ clade,false,2026-03-11
 clads,false,2026-03-11
 claes,false,2026-03-11
 clags,false,2026-03-11
-claim,false,2026-03-11
+claim,true,2026-03-11
 clair,false,2026-03-11
 clame,false,2026-03-11
 clamp,true,2026-03-11
@@ -3566,7 +3566,7 @@ dwile,false,2026-03-11
 dwine,false,2026-03-11
 dyads,false,2026-03-11
 dyers,false,2026-03-11
-dying,true,2026-03-11
+dying,false,2026-03-11
 dyked,false,2026-03-11
 dykes,false,2026-03-11
 dykey,false,2026-03-11
@@ -4202,7 +4202,7 @@ fiver,false,2026-03-11
 fives,false,2026-03-11
 fixed,false,2026-03-11
 fixer,true,2026-03-11
-fixes,false,2026-03-11
+fixes,true,2026-03-11
 fixie,false,2026-03-11
 fixit,false,2026-03-11
 fizzy,false,2026-03-11
@@ -4290,7 +4290,7 @@ flout,true,2026-03-11
 flown,true,2026-03-11
 flows,false,2026-03-11
 flowy,false,2026-03-11
-flubs,true,2026-03-11
+flubs,false,2026-03-11
 flued,false,2026-03-11
 flues,false,2026-03-11
 fluey,false,2026-03-11
@@ -4792,7 +4792,7 @@ gippy,false,2026-03-11
 gipsy,false,2026-03-11
 girds,false,2026-03-11
 girlf,false,2026-03-11
-girls,false,2026-03-11
+girls,true,2026-03-11
 girly,false,2026-03-11
 girns,false,2026-03-11
 giron,false,2026-03-11
@@ -5390,7 +5390,7 @@ hazel,true,2026-03-11
 hazer,false,2026-03-11
 hazes,false,2026-03-11
 hazle,false,2026-03-11
-heads,true,2026-03-11
+heads,false,2026-03-11
 heady,true,2026-03-11
 heald,false,2026-03-11
 heals,false,2026-03-11
@@ -5789,7 +5789,7 @@ iddah,false,2026-03-11
 iddat,false,2026-03-11
 iddut,false,2026-03-11
 ideal,true,2026-03-11
-ideas,true,2026-03-11
+ideas,false,2026-03-11
 idees,false,2026-03-11
 ident,false,2026-03-11
 idiom,true,2026-03-11
@@ -6803,7 +6803,7 @@ leeze,false,2026-03-11
 lefte,false,2026-03-11
 lefts,false,2026-03-11
 lefty,true,2026-03-11
-legal,true,2026-03-11
+legal,false,2026-03-11
 leger,false,2026-03-11
 leges,false,2026-03-11
 legge,false,2026-03-11
@@ -10808,7 +10808,7 @@ rolag,false,2026-03-11
 roleo,false,2026-03-11
 roles,true,2026-03-11
 rolfs,false,2026-03-11
-rolls,false,2026-03-11
+rolls,true,2026-03-11
 rolly,false,2026-03-11
 romal,false,2026-03-11
 roman,false,2026-03-11
@@ -11191,9 +11191,9 @@ saury,false,2026-03-11
 saute,true,2026-03-11
 sauts,false,2026-03-11
 sauve,false,2026-03-11
-saved,false,2026-03-11
+saved,true,2026-03-11
 saver,false,2026-03-11
-saves,false,2026-03-11
+saves,true,2026-03-11
 savey,false,2026-03-11
 savin,false,2026-03-11
 savor,true,2026-03-11
@@ -11563,7 +11563,7 @@ shlep,false,2026-03-11
 shlub,false,2026-03-11
 shmek,false,2026-03-11
 shmoe,false,2026-03-11
-shoal,false,2026-03-11
+shoal,true,2026-03-11
 shoat,false,2026-03-11
 shock,false,2026-03-11
 shoed,false,2026-03-11
@@ -12352,7 +12352,7 @@ staws,false,2026-03-11
 stays,false,2026-03-11
 stead,true,2026-03-11
 steak,false,2026-03-11
-steal,false,2026-03-11
+steal,true,2026-03-11
 steam,true,2026-03-11
 stean,false,2026-03-11
 stear,false,2026-03-11
@@ -12884,7 +12884,7 @@ teads,false,2026-03-11
 teaed,false,2026-03-11
 teaks,false,2026-03-11
 teals,false,2026-03-11
-teams,false,2026-03-11
+teams,true,2026-03-11
 tears,false,2026-03-11
 teary,true,2026-03-11
 tease,true,2026-03-11
@@ -13771,7 +13771,7 @@ urupa,false,2026-03-11
 urvas,false,2026-03-11
 usage,true,2026-03-11
 usens,false,2026-03-11
-users,false,2026-03-11
+users,true,2026-03-11
 useta,false,2026-03-11
 usher,true,2026-03-11
 using,true,2026-03-11
