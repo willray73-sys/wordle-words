@@ -1115,7 +1115,7 @@ begin,true,2026-04-16
 begob,false,2026-04-16
 begot,false,2026-04-16
 begum,false,2026-04-16
-begun,false,2026-04-16
+begun,true,2026-04-16
 beige,false,2026-04-16
 beigy,false,2026-04-16
 being,true,2026-04-16
@@ -13116,7 +13116,7 @@ tilts,false,2026-04-16
 timbo,false,2026-04-16
 timed,false,2026-04-16
 timer,true,2026-04-16
-times,true,2026-04-16
+times,false,2026-04-16
 timid,false,2026-04-16
 timon,false,2026-04-16
 timps,false,2026-04-16
