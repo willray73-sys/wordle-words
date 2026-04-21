@@ -378,7 +378,7 @@ alibi,false,2026-04-21
 alick,false,2026-04-21
 alien,true,2026-04-21
 alifs,false,2026-04-21
-align,true,2026-04-21
+align,false,2026-04-21
 alike,true,2026-04-21
 alims,false,2026-04-21
 aline,false,2026-04-21
@@ -1595,7 +1595,7 @@ bowls,false,2026-04-21
 bowne,false,2026-04-21
 bowrs,false,2026-04-21
 bowse,false,2026-04-21
-boxed,true,2026-04-21
+boxed,false,2026-04-21
 boxen,false,2026-04-21
 boxer,true,2026-04-21
 boxes,false,2026-04-21
@@ -2240,7 +2240,7 @@ chufa,false,2026-04-21
 chuff,false,2026-04-21
 chugs,false,2026-04-21
 chump,true,2026-04-21
-chums,true,2026-04-21
+chums,false,2026-04-21
 chunk,true,2026-04-21
 churl,false,2026-04-21
 churn,false,2026-04-21
@@ -2379,9 +2379,9 @@ cloze,false,2026-04-21
 clubs,false,2026-04-21
 cluck,true,2026-04-21
 clued,false,2026-04-21
-clues,true,2026-04-21
+clues,false,2026-04-21
 cluey,false,2026-04-21
-clump,true,2026-04-21
+clump,false,2026-04-21
 clung,true,2026-04-21
 clunk,false,2026-04-21
 clype,false,2026-04-21
@@ -2453,7 +2453,7 @@ colls,false,2026-04-21
 colly,false,2026-04-21
 colog,false,2026-04-21
 colon,true,2026-04-21
-color,true,2026-04-21
+color,false,2026-04-21
 colts,false,2026-04-21
 colza,false,2026-04-21
 comae,false,2026-04-21
@@ -4200,7 +4200,7 @@ fitte,false,2026-04-21
 fitts,false,2026-04-21
 fiver,false,2026-04-21
 fives,false,2026-04-21
-fixed,true,2026-04-21
+fixed,false,2026-04-21
 fixer,true,2026-04-21
 fixes,false,2026-04-21
 fixie,false,2026-04-21
@@ -5895,7 +5895,7 @@ input,true,2026-04-21
 inros,false,2026-04-21
 inrun,false,2026-04-21
 insee,false,2026-04-21
-inset,true,2026-04-21
+inset,false,2026-04-21
 inspo,false,2026-04-21
 intel,false,2026-04-21
 inter,true,2026-04-21
@@ -8559,7 +8559,7 @@ nosir,false,2026-04-21
 notal,false,2026-04-21
 notam,false,2026-04-21
 notch,false,2026-04-21
-noted,true,2026-04-21
+noted,false,2026-04-21
 noter,false,2026-04-21
 notes,false,2026-04-21
 notum,false,2026-04-21
@@ -10603,7 +10603,7 @@ resaw,false,2026-04-21
 resay,false,2026-04-21
 resee,false,2026-04-21
 reses,false,2026-04-21
-reset,true,2026-04-21
+reset,false,2026-04-21
 resew,false,2026-04-21
 resid,false,2026-04-21
 resin,true,2026-04-21
@@ -13116,7 +13116,7 @@ tilts,false,2026-04-21
 timbo,false,2026-04-21
 timed,false,2026-04-21
 timer,true,2026-04-21
-times,true,2026-04-21
+times,false,2026-04-21
 timid,false,2026-04-21
 timon,false,2026-04-21
 timps,false,2026-04-21
@@ -13232,7 +13232,7 @@ tonka,false,2026-04-21
 tonks,false,2026-04-21
 tonne,false,2026-04-21
 tonus,false,2026-04-21
-tools,true,2026-04-21
+tools,false,2026-04-21
 tooms,false,2026-04-21
 toons,false,2026-04-21
 tooth,true,2026-04-21
