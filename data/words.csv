@@ -1595,7 +1595,7 @@ bowls,false,2026-06-25
 bowne,false,2026-06-25
 bowrs,false,2026-06-25
 bowse,false,2026-06-25
-boxed,false,2026-06-25
+boxed,true,2026-06-25
 boxen,false,2026-06-25
 boxer,true,2026-06-25
 boxes,false,2026-06-25
@@ -2240,7 +2240,7 @@ chufa,false,2026-06-25
 chuff,false,2026-06-25
 chugs,false,2026-06-25
 chump,true,2026-06-25
-chums,false,2026-06-25
+chums,true,2026-06-25
 chunk,true,2026-06-25
 churl,false,2026-06-25
 churn,false,2026-06-25
@@ -2379,7 +2379,7 @@ cloze,false,2026-06-25
 clubs,false,2026-06-25
 cluck,true,2026-06-25
 clued,false,2026-06-25
-clues,false,2026-06-25
+clues,true,2026-06-25
 cluey,false,2026-06-25
 clump,true,2026-06-25
 clung,true,2026-06-25
@@ -2453,7 +2453,7 @@ colls,false,2026-06-25
 colly,false,2026-06-25
 colog,false,2026-06-25
 colon,true,2026-06-25
-color,false,2026-06-25
+color,true,2026-06-25
 colts,false,2026-06-25
 colza,false,2026-06-25
 comae,false,2026-06-25
@@ -2795,7 +2795,7 @@ curly,true,2026-06-25
 curns,false,2026-06-25
 curny,false,2026-06-25
 currs,false,2026-06-25
-curry,false,2026-06-25
+curry,true,2026-06-25
 curse,true,2026-06-25
 cursi,false,2026-06-25
 curst,false,2026-06-25
@@ -4200,7 +4200,7 @@ fitte,false,2026-06-25
 fitts,false,2026-06-25
 fiver,false,2026-06-25
 fives,false,2026-06-25
-fixed,false,2026-06-25
+fixed,true,2026-06-25
 fixer,true,2026-06-25
 fixes,false,2026-06-25
 fixie,false,2026-06-25
@@ -5895,7 +5895,7 @@ input,true,2026-06-25
 inros,false,2026-06-25
 inrun,false,2026-06-25
 insee,false,2026-06-25
-inset,false,2026-06-25
+inset,true,2026-06-25
 inspo,false,2026-06-25
 intel,false,2026-06-25
 inter,true,2026-06-25
@@ -8559,7 +8559,7 @@ nosir,false,2026-06-25
 notal,false,2026-06-25
 notam,false,2026-06-25
 notch,true,2026-06-25
-noted,false,2026-06-25
+noted,true,2026-06-25
 noter,false,2026-06-25
 notes,false,2026-06-25
 notum,false,2026-06-25
@@ -8951,7 +8951,7 @@ ouzel,false,2026-06-25
 ouzos,false,2026-06-25
 ovals,false,2026-06-25
 ovary,false,2026-06-25
-ovate,false,2026-06-25
+ovate,true,2026-06-25
 ovels,false,2026-06-25
 ovens,false,2026-06-25
 overs,false,2026-06-25
@@ -10172,7 +10172,7 @@ queck,false,2026-06-25
 queek,false,2026-06-25
 queem,false,2026-06-25
 queen,true,2026-06-25
-queer,false,2026-06-25
+queer,true,2026-06-25
 quell,true,2026-06-25
 queme,false,2026-06-25
 quena,false,2026-06-25
@@ -10603,7 +10603,7 @@ resaw,false,2026-06-25
 resay,false,2026-06-25
 resee,false,2026-06-25
 reses,false,2026-06-25
-reset,false,2026-06-25
+reset,true,2026-06-25
 resew,false,2026-06-25
 resid,false,2026-06-25
 resin,true,2026-06-25
@@ -13116,7 +13116,7 @@ tilts,false,2026-06-25
 timbo,false,2026-06-25
 timed,false,2026-06-25
 timer,true,2026-06-25
-times,false,2026-06-25
+times,true,2026-06-25
 timid,false,2026-06-25
 timon,false,2026-06-25
 timps,false,2026-06-25
@@ -13232,7 +13232,7 @@ tonka,false,2026-06-25
 tonks,false,2026-06-25
 tonne,false,2026-06-25
 tonus,false,2026-06-25
-tools,false,2026-06-25
+tools,true,2026-06-25
 tooms,false,2026-06-25
 toons,false,2026-06-25
 tooth,true,2026-06-25
@@ -13663,7 +13663,7 @@ union,true,2026-06-25
 unios,false,2026-06-25
 unite,true,2026-06-25
 units,false,2026-06-25
-unity,false,2026-06-25
+unity,true,2026-06-25
 unjam,false,2026-06-25
 unked,false,2026-06-25
 unket,false,2026-06-25
