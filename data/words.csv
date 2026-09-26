@@ -1595,7 +1595,7 @@ bowls,false,2026-09-26
 bowne,false,2026-09-26
 bowrs,false,2026-09-26
 bowse,false,2026-09-26
-boxed,true,2026-09-26
+boxed,false,2026-09-26
 boxen,false,2026-09-26
 boxer,true,2026-09-26
 boxes,false,2026-09-26
@@ -2240,7 +2240,7 @@ chufa,false,2026-09-26
 chuff,false,2026-09-26
 chugs,false,2026-09-26
 chump,true,2026-09-26
-chums,true,2026-09-26
+chums,false,2026-09-26
 chunk,true,2026-09-26
 churl,false,2026-09-26
 churn,true,2026-09-26
@@ -2379,7 +2379,7 @@ cloze,false,2026-09-26
 clubs,false,2026-09-26
 cluck,true,2026-09-26
 clued,false,2026-09-26
-clues,true,2026-09-26
+clues,false,2026-09-26
 cluey,false,2026-09-26
 clump,true,2026-09-26
 clung,true,2026-09-26
@@ -2453,7 +2453,7 @@ colls,false,2026-09-26
 colly,false,2026-09-26
 colog,false,2026-09-26
 colon,true,2026-09-26
-color,true,2026-09-26
+color,false,2026-09-26
 colts,false,2026-09-26
 colza,false,2026-09-26
 comae,false,2026-09-26
@@ -2530,7 +2530,7 @@ copes,false,2026-09-26
 copha,false,2026-09-26
 coppy,false,2026-09-26
 copra,false,2026-09-26
-copse,true,2026-09-26
+copse,false,2026-09-26
 copsy,false,2026-09-26
 coqui,false,2026-09-26
 coral,true,2026-09-26
@@ -3674,7 +3674,7 @@ elder,true,2026-09-26
 eldin,false,2026-09-26
 elect,false,2026-09-26
 eleet,false,2026-09-26
-elegy,true,2026-09-26
+elegy,false,2026-09-26
 elemi,false,2026-09-26
 elfed,false,2026-09-26
 elfin,true,2026-09-26
@@ -4200,7 +4200,7 @@ fitte,false,2026-09-26
 fitts,false,2026-09-26
 fiver,false,2026-09-26
 fives,false,2026-09-26
-fixed,true,2026-09-26
+fixed,false,2026-09-26
 fixer,true,2026-09-26
 fixes,false,2026-09-26
 fixie,false,2026-09-26
@@ -5895,7 +5895,7 @@ input,true,2026-09-26
 inros,false,2026-09-26
 inrun,false,2026-09-26
 insee,false,2026-09-26
-inset,true,2026-09-26
+inset,false,2026-09-26
 inspo,false,2026-09-26
 intel,true,2026-09-26
 inter,true,2026-09-26
@@ -7614,7 +7614,7 @@ mesia,false,2026-09-26
 mesic,false,2026-09-26
 mesne,false,2026-09-26
 meson,false,2026-09-26
-messy,true,2026-09-26
+messy,false,2026-09-26
 mesto,false,2026-09-26
 mesyl,false,2026-09-26
 metal,true,2026-09-26
@@ -8559,7 +8559,7 @@ nosir,false,2026-09-26
 notal,false,2026-09-26
 notam,false,2026-09-26
 notch,true,2026-09-26
-noted,true,2026-09-26
+noted,false,2026-09-26
 noter,false,2026-09-26
 notes,false,2026-09-26
 notum,false,2026-09-26
@@ -9029,7 +9029,7 @@ paedo,false,2026-09-26
 paeon,false,2026-09-26
 pagan,false,2026-09-26
 paged,false,2026-09-26
-pager,true,2026-09-26
+pager,false,2026-09-26
 pages,false,2026-09-26
 pagle,false,2026-09-26
 pagne,false,2026-09-26
@@ -10603,7 +10603,7 @@ resaw,false,2026-09-26
 resay,false,2026-09-26
 resee,false,2026-09-26
 reses,false,2026-09-26
-reset,true,2026-09-26
+reset,false,2026-09-26
 resew,false,2026-09-26
 resid,false,2026-09-26
 resin,true,2026-09-26
@@ -11574,7 +11574,7 @@ shogs,false,2026-09-26
 shoji,false,2026-09-26
 shojo,false,2026-09-26
 shola,false,2026-09-26
-shone,true,2026-09-26
+shone,false,2026-09-26
 shonk,false,2026-09-26
 shook,false,2026-09-26
 shool,false,2026-09-26
@@ -12421,7 +12421,7 @@ stogs,false,2026-09-26
 stogy,false,2026-09-26
 stoic,true,2026-09-26
 stoit,false,2026-09-26
-stoke,true,2026-09-26
+stoke,false,2026-09-26
 stole,true,2026-09-26
 stoln,false,2026-09-26
 stoma,false,2026-09-26
@@ -13232,7 +13232,7 @@ tonka,false,2026-09-26
 tonks,false,2026-09-26
 tonne,false,2026-09-26
 tonus,false,2026-09-26
-tools,true,2026-09-26
+tools,false,2026-09-26
 tooms,false,2026-09-26
 toons,false,2026-09-26
 tooth,true,2026-09-26
@@ -14113,7 +14113,7 @@ waits,false,2026-09-26
 waive,false,2026-09-26
 wakas,false,2026-09-26
 waked,false,2026-09-26
-waken,true,2026-09-26
+waken,false,2026-09-26
 waker,false,2026-09-26
 wakes,false,2026-09-26
 wakfs,false,2026-09-26
