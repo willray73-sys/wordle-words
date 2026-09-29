@@ -2530,7 +2530,7 @@ copes,false,2026-09-29
 copha,false,2026-09-29
 coppy,false,2026-09-29
 copra,false,2026-09-29
-copse,false,2026-09-29
+copse,true,2026-09-29
 copsy,false,2026-09-29
 coqui,false,2026-09-29
 coral,true,2026-09-29
@@ -3674,7 +3674,7 @@ elder,true,2026-09-29
 eldin,false,2026-09-29
 elect,false,2026-09-29
 eleet,false,2026-09-29
-elegy,false,2026-09-29
+elegy,true,2026-09-29
 elemi,false,2026-09-29
 elfed,false,2026-09-29
 elfin,true,2026-09-29
@@ -7614,7 +7614,7 @@ mesia,false,2026-09-29
 mesic,false,2026-09-29
 mesne,false,2026-09-29
 meson,false,2026-09-29
-messy,false,2026-09-29
+messy,true,2026-09-29
 mesto,false,2026-09-29
 mesyl,false,2026-09-29
 metal,true,2026-09-29
@@ -9029,7 +9029,7 @@ paedo,false,2026-09-29
 paeon,false,2026-09-29
 pagan,false,2026-09-29
 paged,false,2026-09-29
-pager,false,2026-09-29
+pager,true,2026-09-29
 pages,false,2026-09-29
 pagle,false,2026-09-29
 pagne,false,2026-09-29
@@ -11574,7 +11574,7 @@ shogs,false,2026-09-29
 shoji,false,2026-09-29
 shojo,false,2026-09-29
 shola,false,2026-09-29
-shone,false,2026-09-29
+shone,true,2026-09-29
 shonk,false,2026-09-29
 shook,false,2026-09-29
 shool,false,2026-09-29
@@ -11868,7 +11868,7 @@ slojd,false,2026-09-29
 sloka,false,2026-09-29
 slomo,false,2026-09-29
 sloom,false,2026-09-29
-sloop,false,2026-09-29
+sloop,true,2026-09-29
 sloot,false,2026-09-29
 slope,true,2026-09-29
 slops,false,2026-09-29
@@ -12421,7 +12421,7 @@ stogs,false,2026-09-29
 stogy,false,2026-09-29
 stoic,true,2026-09-29
 stoit,false,2026-09-29
-stoke,false,2026-09-29
+stoke,true,2026-09-29
 stole,true,2026-09-29
 stoln,false,2026-09-29
 stoma,false,2026-09-29
@@ -13430,7 +13430,7 @@ trugs,false,2026-09-29
 trull,false,2026-09-29
 truly,true,2026-09-29
 trump,false,2026-09-29
-trunk,false,2026-09-29
+trunk,true,2026-09-29
 truss,true,2026-09-29
 trust,true,2026-09-29
 truth,true,2026-09-29
@@ -14113,7 +14113,7 @@ waits,false,2026-09-29
 waive,false,2026-09-29
 wakas,false,2026-09-29
 waked,false,2026-09-29
-waken,false,2026-09-29
+waken,true,2026-09-29
 waker,false,2026-09-29
 wakes,false,2026-09-29
 wakfs,false,2026-09-29
